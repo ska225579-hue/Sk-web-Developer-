@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SK Web Developer - Services & Website Types</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Developer Header */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      max-width: 800px;
+    }
+
+    .brand-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.1);
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .header h1 {
+      font-size: 2.6rem;
+      color: #ffffff;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .header h1 span {
+      color: #38bdf8;
+    }
+
+    .header p {
+      color: #94a3b8;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* Contact Button in Header */
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+    }
+
+    .contact-btn:hover {
+      background: #0ea5e9;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+    }
+
+    /* Cards Grid */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 24px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #38bdf8;
+      box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.2);
+    }
+
+    .card-icon {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .card-desc {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .tag {
+      background: #0f172a;
+      color: #38bdf8;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border: 1px solid #334155;
+    }
+
+    /* Footer Section */
+    .footer {
+      margin-top: 60px;
+      text-align: center;
+      padding: 24px;
+      border-top: 1px solid #334155;
+      width: 100%;
+      max-width: 1200px;
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    .footer a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Developer Profile Header -->
+  <div class="header">
+    <div class="brand-badge">Professional Services</div>
+    <h1><span>SK Web Developer</span></h1>
+    <p>हम आपके बिजनेस और काम के अनुसार सभी प्रकार की आधुनिक, फास्ट और रेस्पॉन्सिव वेबसाइट्स तैयार करते हैं।</p>
+    <a href="tel:+919175299186" class="contact-btn">
+      📞 Call: 9175299186
+    </a>
+  </div>
+
+  <!-- Website Types Cards Container -->
+  <div class="card-container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div>
+        <div class="card-icon">🛒</div>
+        <h2 class="card-title">E-commerce Website</h2>
+        <p class="card-desc">ऑनलाइन दुकान, प्रोडक्ट कैटलॉग, शॉपिंग कार्ट और सुरक्षित ऑनलाइन पेमेंट सिस्टम।</p>
+      </div>
+      <div class="tech-stack">
+        <span class="tag">Online Store</span>
+        <span class="tag">Payment Gateway</span>
+        <span class="tag">Product Catalog</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div>
+        <div class="card-icon">🏢</div>
+        <h2 class="card-title">Business Website</h2>
+        <p class="card-desc">लोकल दुकानों, जिम, सैलून, क्लिनिक और कंपनियों के लिए कस्टमर इंक्वायरी और सर्विस शोकेस वेबसाइट।</p>
+      </div>
+      <div class="tech-stack">
+        <span class="tag">Local Business</span>
+        <span class="tag">Lead Contact</span>
+        <span class="tag">Google Map</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div>
+        <div class="card-icon">💼</div>
+        <h2 class="card-title">Portfolio Website</h2>
+        <p class="card-desc">फ्रीलांसर्स, डेवलपर्स और प्रोफेशनल्स के काम, स्किल्स और पिछले प्रोजेक्ट्स दिखाने के लिए पर्सनल वेबसाइट।</p>
+      </div>
+      <div class="tech-stack">
+        <span class="tag">Personal Branding</span>
+        <span class="tag">Resume / Work</span>
+        <span class="tag">Modern UI</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div>
+        <div class="card-icon">🚀</div>
+        <h2 class="card-title">Landing Page</h2>
+        <p class="card-desc">किसी खास ऑफर, नए प्रोडक्ट या विज्ञापन (Ads) के लिए हाई-कन्वर्जन सिंगल पेज वेबसाइट।</p>
+      </div>
+      <div class="tech-stack">
+        <span class="tag">Fast Loading</span>
+        <span class="tag">Call to Action</span>
+        <span class="tag">Lead Capture</span>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div>
+        <div class="card-icon">✍️</div>
+        <h2 class="card-title">Blog / Content Site</h2>
+        <p class="card-desc">आर्टिकल्स, समाचार, टिप्स और ट्यूटोरियल्स शेयर करने के लिए पूरी तरह SEO-फ्रेंडली ब्लॉग साइट।</p>
+      </div>
+      <div class="tech-stack">
+        <span class="tag">SEO Optimized</span>
+        <span class="tag">Articles</span>
+        <span class="tag">Reader Friendly</span>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div>
+        <div class="card-icon">⚙️</div>
+        <h2 class="card-title">Web Application (SaaS)</h2>
+        <p class="card-desc">बिलिंग सॉफ्टवेयर, मैनेजमेंट सिस्टम, कस्टम टूल्स और डायनामिक वेब पोर्टल्स।</p>
+      </div>
+      <div class="tech-stack">
+        <span class="tag">Interactive App</span>
+        <span class="tag">Database</span>
+        <span class="tag">User Dashboard</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>© 2026 <strong>SK Web Developer</strong> | किसी भी वेबसाइट के लिए संपर्क करें: <a href="tel:+919175299186">9175299186</a></p>
+  </div>
+
+</body>
+</html>
